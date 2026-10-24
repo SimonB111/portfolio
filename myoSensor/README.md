@@ -1,4 +1,4 @@
-# sEMG Gesture Detection
+# sEMG Gesture Detection (Summer 2025)
 
 I created PCBs to sense the electric signals in my forearm. The ESP32 reads the data, filters it, then runs on-device inference to determine the hand gesture.
 
