@@ -14,7 +14,7 @@ Running the model on-device proved difficult, restricting the types of layers I 
 ---
 
 
-<img style="width: 20%; height: auto;" alt="IMG_3330" src="https://github.com/user-attachments/assets/84e07083-6847-4aa9-a37d-03ca40f99430" />
+<img style="width: 35%; height: auto;" alt="IMG_3330" src="https://github.com/user-attachments/assets/84e07083-6847-4aa9-a37d-03ca40f99430" />
 
 The sensors are mounted directly to the forearm.
 
