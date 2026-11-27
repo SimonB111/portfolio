@@ -12,9 +12,15 @@ flowchart LR
     subgraph ESP32
         C["ESP32 ADC"] --> D["Digital Filtering"]
         D --> E["On-Device Inference"]
+        subgraph InferenceModel["Keras Model (2-ch Window)"]
+            direction TB
+            M1["Conv1D(32, k=5, relu6)"] --> M2["GlobalMaxPooling1D()"]
+            M2 --> M3["Dense(4, softmax)"]
+        end
+        E -.-> M1
     end
     B --> C
-    E --> F["Gesture Prediction"]
+    M3 --> F["Gesture Prediction"]
 ```
 
 
