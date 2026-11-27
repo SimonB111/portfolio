@@ -7,7 +7,7 @@ I created PCBs to sense the electric signals in my forearm. The ESP32 reads the 
 
 
 ```mermaid
-flowchart TD
+flowchart LR
     A["sEMG Electrodes"] --> B["Amplifier PCB"]
     subgraph ESP32
         C["ESP32 ADC"] --> D["Digital Filtering"]
@@ -21,6 +21,8 @@ flowchart TD
     end
     B --> C
     M3 --> F["Gesture Prediction"]
+    F ~~~ Spacer[" "]
+    style Spacer fill:none,stroke:none,color:none
 ```
 
 
