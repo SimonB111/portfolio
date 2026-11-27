@@ -1,14 +1,15 @@
+
 # sEMG Gesture Detection (Summer 2025)
 
 I created PCBs to sense the electric signals in my forearm. The ESP32 reads the data, filters it, then runs on-device inference to determine the hand gesture.
 
-https://github.com/user-attachments/assets/ff40a174-9609-4921-ad33-305a34994136
+<img width="375" height="270" alt="emg_live_demo_compressed" src="https://github.com/user-attachments/assets/85866ee6-9dae-4d0d-815e-a1579a4ceb0d" />
 
 
 ---
 
 
-Running the model on-device proved difficult, restricting the types of layers I could use in the neural network in addition to having limited memory. By pivoting to a simpler Conv1D-based model I was able to successfully deploy the model for live inference. 
+Running the model on an ESP32 microcontroller proved difficult, restricting the types of layers I could use in the neural network in addition to having limited memory. By pivoting to a simpler Conv1D-based model I was able to successfully deploy the model for live inference. 
 
 
 ---
